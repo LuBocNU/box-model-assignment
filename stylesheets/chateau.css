@@ -1,0 +1,134 @@
+/*this is default which is set at smaller mobile screen first */
+header { background-image: url("../images/logosmall.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        min-height: 50px;}
+    
+    body {  background-color:#4d4b30;
+            color:#482216 ;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    main  {background-color:#A8693F; 
+            color: #2E3842;
+        }
+    img { width: 100%;
+        height: auto;
+    }
+    /* all the list first line would set in bold*/
+    dt { font-weight: bold;
+    }
+    aside {
+        background-color:#4F4F4F;
+        padding: 2%;
+        border-radius: 25px;
+    }
+    figcaption {
+        text-align: center;
+        font-weight: bold;
+
+    }
+    .circleborder {
+        border-radius: 50%;
+        width: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .largeitalics { font-style: italic;
+            font-size: 1.2em;
+    }
+    h2 {text-align: center;}
+
+    h3 {text-align: center;}
+
+    #headerh1 {font-family:'Brush Script MT', cursive;
+        font-size: 4em;}
+
+    .listborder {border-style: solid;
+            border-color: navy;}
+
+    .listbackground {color: navy;
+        background-color:bisque;}
+
+    /* NAV RELATED CODE HERE*/
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline;
+        margin: 2px;
+        width: 2%;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+      }
+    nav {font-size: 1.5em;}
+
+    nav a {text-decoration: none;}
+
+    /* for NAV where link is not visited*/
+    nav a:link {color:navy;}
+    
+    /* for NAV where link is visited*/
+    nav a:visited {color: black;}
+    
+    /* for NAV mouse hover link */
+    nav a:hover {color: red;}
+
+    footer {text-align:center;}
+    
+    /* this media screen would only apply to anything great than 480px*/
+@media screen and (min-width: 480px) {
+    header {background-color:#482216; 
+            color: #4d4b30;
+            background-image: url("../images/LogoLarge.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            min-height: 100px;
+        }
+    nav {overflow: auto;}
+
+    nav ul {list-style-type: none;
+            margin: 0;
+            padding: 0;}
+          
+    nav li {display: block;
+            margin: 10px;
+            width: auto;
+            background-color: darkolivegreen;
+            text-align: center;}
+
+            nav a {text-decoration: none;}
+
+    body {  background-color:#3F3D27;
+            color: #C7C7C7;
+            font-family: 'Times New Roman', Times, serif;}
+
+    aside { padding: 5%;}
+
+    dl {margin: 5px;}
+
+    main  { background-color: #773A22; 
+            color: #BDCFD1;}
+
+    .circleborder { border-radius:  50%;
+                    width: 150px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;}
+    
+    /* 2 uneven column with nav on left and aside to the right */
+    .column {   float: left;
+                display: flex;
+                padding: 10px;}
+
+    .left    { width: 20%;}
+
+    .right   { width: 60%;}
+
+    /* will need a float clear so that the right is even */
+    
+    .clear {  clear: both;}
+}    
